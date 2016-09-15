@@ -47,3 +47,5 @@ and runs in ~4 minutes on Linux with 24  cores (Intel(R) Xeon(R) CPU E5-4610 0 @
 For questions/comments email:  
   samn at neurosim dot downstate dot edu
 
+20160915 This updated version from the Lytton lab allows their models
+which contain misc.mod and misc.h to compile on the mac.
