@@ -1,0 +1,15 @@
+xwindows=1
+show_panel=0
+pwd()
+load_file("xgetargs.hoc")
+load_file("grvec.hoc")
+nrnpython("execfile(\"labels.py\")")
+load_file("syncode.hoc")
+load_file("decnqs.hoc")
+if (! VECST_INSTALLED) install_vecst()
+if (! INSTALLED_stats) install_stats()
+//load_file("nqs_utils.hoc")
+load_file("drline.hoc")
+//load_file("stats.hoc")
+//load_file("decmat.hoc")
+print "loaded init.hoc"
