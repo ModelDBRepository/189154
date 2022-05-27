@@ -49,3 +49,6 @@ For questions/comments email:
 
 20160915 This updated version from the Lytton lab allows their models
 which contain misc.mod and misc.h to compile on the mac.
+
+20220523 Updated MOD files to contain valid C++ and be compatible with
+the upcoming versions 8.2 and 9.0 of NEURON.
