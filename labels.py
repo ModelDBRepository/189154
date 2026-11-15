@@ -5,13 +5,13 @@ hvars=[a for a in dir(h) if h.name_declared(a,2)==5] # 5 if a scalar or double v
     
 CTYP = [s.s for s in h.CTYP]
 CTYPi = len(CTYP)
-for s in CTYP: globals()[s]=int(h.__getattribute__(s))
+for s in CTYP: globals()[s]=int(getattr(h, s))
 E = int(h.E2)
 I = int(h.I2)
 
 STYP = [s.s for s in h.STYP]
 STYPi = len(STYP)
-for s in STYP: globals()[s]=int(h.__getattribute__(s))
+for s in STYP: globals()[s]=int(getattr(h, s))
 
 try:  # most of these are defined in labels.hoc and syncode.hoc
   # ice - return True iff arg1 is an inhibitory cell
